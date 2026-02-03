@@ -19,7 +19,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 # Setup Log
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-TOKEN = "8521111355:AAFBex2-KpJ5M15X-QdX3qD9WU4tTr0WCiA"
+TOKEN = "masukan token tele"
 
 # Database sementara untuk URL
 url_storage = {}
