@@ -1,0 +1,15 @@
+def download_and_send(message_obj, url, type='audio', is_callback=False):
+    # KONFIGURASI PALING BANDEL + COOKIES
+    ydl_opts = {
+        'format': 'bestaudio/best' if type == 'audio' else 'best',
+        'quiet': True,
+        'no_warnings': True,
+        'nocheckcertificate': True,
+        'source_address': '0.0.0.0',
+        'user_agent': random.choice(USER_AGENTS),
+        'cookiefile': 'cookies.txt',  # <--- INI KUNCI AGAR ANTI-BLOKIR
+        'socket_timeout': 30,
+        'retries': 15,  # Saya naikkan retries agar lebih bandel
+        'extract_flat': False,
+    }
+    # ... sisa kode tetap sama ...
